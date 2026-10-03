@@ -60,7 +60,7 @@ AskDB/
   - Add `.env` config loader.
   - *Check*: Works interactively from the `/docs` OpenAPI Swagger page.
 
-- [ ] **Step 3: Schema Extraction**
+- [x] **Step 3: Schema Extraction**
   - Function `get_schema(db_id)` returning compact text of tables, columns, types, primary keys, and foreign keys (via `PRAGMA table_info` and `PRAGMA foreign_key_list`).
   - Add `GET /schema/{db_id}` endpoint.
   - *Check*: Clean, readable schema text is returned.

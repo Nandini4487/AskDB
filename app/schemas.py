@@ -21,3 +21,9 @@ class RunSqlResponse(BaseModel):
 class DatabaseListResponse(BaseModel):
     """Response payload containing available databases."""
     databases: List[str] = Field(default_factory=list, description="List of available database IDs")
+
+
+class SchemaResponse(BaseModel):
+    """Response payload containing extracted database schema."""
+    db_id: str = Field(..., description="ID of the database")
+    schema_text: str = Field(..., description="Compact formatted schema representation")
