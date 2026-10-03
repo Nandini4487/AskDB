@@ -51,7 +51,7 @@ AskDB/
   - Write a tiny script to run a sample JOIN/GROUP BY query on it and print the result.
   - *Check*: Query result prints in the terminal.
 
-- [ ] **Step 2: Backend SQL Executor**
+- [x] **Step 2: Backend SQL Executor**
   - FastAPI app with:
     - `POST /run_sql` (takes `sql` + `db_id`, returns columns and rows as JSON)
     - `GET /databases` (lists databases in `data/`).
